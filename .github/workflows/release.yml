@@ -24,11 +24,9 @@ jobs:
       with:
         pr_number: ${{ github.event.number }}
 
-  publish:
-    needs: if_merged
-    uses: ./.github/workflows/publish.yml
-    with:
-      tag: ${{ needs.if_merged.outputs.tag }}
-    secrets: inherit
-
-        
+#   publish:
+#     needs: if_merged
+#     uses: ./.github/workflows/publish.yml
+#     with:
+#       tag: ${{ needs.if_merged.outputs.tag }}
+#     secrets: inherit
