@@ -15,7 +15,8 @@ jobs:
       pull-requests: write
     env:
       GH_TOKEN: ${{ github.token }}
-      PR_NUMBER: ${{ github.event.number }}
     steps:
     - uses: actions/checkout@v3
-    - uses: bboughton/example-action/check-version-category-label@7832a327466cca63349f42711941f73f21ca7c66
+    - uses: bboughton/example-action/check-version-category-label@588327fc0b26165f2ad59e6957b087e68cc60544
+      with:
+        pr_number: ${{ github.event.number }}
