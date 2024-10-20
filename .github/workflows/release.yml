@@ -19,7 +19,7 @@ jobs:
     - uses: actions/checkout@v3
       with:
         fetch-depth: '0' # with tags, required for release
-    - uses: bboughton/example-action@5bdd288f1ff7350a6d4b36c57296872e6aeaec12
+    - uses: bboughton/example-action@fa1285f4703e1eed67560c6ac1900e8a956627e6
       id: release
 
 #   publish:
