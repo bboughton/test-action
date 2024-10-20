@@ -17,6 +17,4 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
     - uses: actions/checkout@v3
-    - uses: bboughton/example-action/check-version-category-label@588327fc0b26165f2ad59e6957b087e68cc60544
-      with:
-        pr_number: ${{ github.event.number }}
+    - uses: bboughton/example-action/check-version-category-label@5bdd288f1ff7350a6d4b36c57296872e6aeaec12

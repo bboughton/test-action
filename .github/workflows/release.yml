@@ -19,10 +19,8 @@ jobs:
     - uses: actions/checkout@v3
       with:
         fetch-depth: '0' # with tags, required for release
-    - uses: bboughton/example-action@588327fc0b26165f2ad59e6957b087e68cc60544
+    - uses: bboughton/example-action@5bdd288f1ff7350a6d4b36c57296872e6aeaec12
       id: release
-      with:
-        pr_number: ${{ github.event.number }}
 
 #   publish:
 #     needs: if_merged
