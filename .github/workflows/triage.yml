@@ -13,8 +13,6 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
-    env:
-      GH_TOKEN: ${{ github.token }}
     steps:
     - uses: actions/checkout@v3
-    - uses: bboughton/example-action/check-version-category-label@5bdd288f1ff7350a6d4b36c57296872e6aeaec12
+    - uses: bboughton/example-action/check-version-category-label@73d6965b4b6e6825e644287dc52017b6bf5e86ff
